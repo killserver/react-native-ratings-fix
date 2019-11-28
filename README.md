@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/killserver/react-native-ratings-fix">
-    <img alt="react-native-ratings-fix" src="./resources/logo.png" width="450">
+    <img alt="react-native-ratings-fix" src="https://raw.githubusercontent.com/killserver/react-native-ratings-fix/master/resources/logo.png" width="450">
   </a>
 </p>
 
@@ -15,20 +15,20 @@
 
 ## Demo - [try it now](https://expo.io/@killserver/react-native-ratings-fix)
 
-![Demo gif](./resources/airbnb_ratings.gif)
+![Demo gif](https://raw.githubusercontent.com/killserver/react-native-ratings-fix/master/resources/airbnb_ratings.gif)
 
 ### Tap Rating
 
 <div style="flex-direction: row">
-  <img src="./resources/tap_rating_1.png" width="300">
-  <img src="./resources/tap_rating_2.png" width="300">
+  <img src="https://raw.githubusercontent.com/killserver/react-native-ratings-fix/master/resources/tap_rating_1.png" width="300">
+  <img src="https://raw.githubusercontent.com/killserver/react-native-ratings-fix/master/resources/tap_rating_2.png" width="300">
 </div>
 
 ### Swipe Rating
 
 <div style="flex-direction: row">
-  <img src="./resources/swipe_rating_1.png" width="300">
-  <img src="./resources/swipe_rating_2.png" width="300">
+  <img src="https://raw.githubusercontent.com/killserver/react-native-ratings-fix/master/resources/swipe_rating_1.png" width="300">
+  <img src="https://raw.githubusercontent.com/killserver/react-native-ratings-fix/master/resources/swipe_rating_2.png" width="300">
 </div>
 
 ## Installation
