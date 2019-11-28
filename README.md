@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/Monte9/react-native-ratings">
-    <img alt="react-native-ratings" src="./resources/logo.png" width="450">
+  <a href="https://github.com/killserver/react-native-ratings-fix">
+    <img alt="react-native-ratings-fix" src="./resources/logo.png" width="450">
   </a>
 </p>
 
@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-native-ratings"><img src="https://img.shields.io/npm/v/react-native-ratings.svg?style=flat-square"></a>
-  <a href="https://www.npmjs.com/package/react-native-ratings"><img src="https://img.shields.io/npm/dm/react-native-ratings.svg?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/react-native-ratings-fix"><img src="https://img.shields.io/npm/v/react-native-ratings-fix.svg?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/react-native-ratings-fix"><img src="https://img.shields.io/npm/dm/react-native-ratings-fix.svg?style=flat-square"></a>
 </p>
 
-## Demo - [try it now](https://expo.io/@monte9/react-native-ratings)
+## Demo - [try it now](https://expo.io/@killserver/react-native-ratings-fix)
 
 ![Demo gif](./resources/airbnb_ratings.gif)
 
@@ -35,16 +35,16 @@
 
 Install the package using yarn or npm:
 
-```yarn add react-native-ratings```
+```yarn add react-native-ratings-fix```
 
   OR
   
-```npm install --save react-native-ratings```
+```npm install --save react-native-ratings-fix```
 
 ## Usage
 
 ``` js
-import { Rating, AirbnbRating } from 'react-native-ratings';
+import { Rating, AirbnbRating } from 'react-native-ratings-fix';
 
 const WATER_IMAGE = require('./water.png')
 
@@ -87,7 +87,7 @@ ratingCompleted(rating) {
 />
 ```
 
-Also refer to the [`example`](https://github.com/Monte9/react-native-ratings/tree/master/react_native_ratings_example) app for more detailed usage example.
+Also refer to the [`example`](https://github.com/killserver/react-native-ratings-fix/tree/master/react_native_ratings_example) app for more detailed usage example.
 
 ## API
 
@@ -129,7 +129,7 @@ Also refer to the [`example`](https://github.com/Monte9/react-native-ratings/tre
 
 ## Try it out
 
-You can try it out with Expo [here](https://expo.io/@monte9/react-native-ratings). Or you can also run the [`example`](https://github.com/Monte9/react-native-ratings/tree/master/react_native_ratings_example) app locally.
+You can try it out with Expo [here](https://expo.io/@killserver/react-native-ratings-fix). Or you can also run the [`example`](https://github.com/killserver/react-native-ratings-fix/tree/master/react_native_ratings_example) app locally.
 
 
 ## Motivation
@@ -138,7 +138,7 @@ One of my friends showed me [this](https://github.com/kartik-v/bootstrap-star-ra
 
 Followed by that, for `v3`, I recreated the Airbnb ratings component and added it to this repo, in case others find this useful. It works out of the box and is quite functional.
 
-Also this is my first [`npm module`](https://www.npmjs.com/package/react-native-ratings) :confetti_ball:
+Also this is my first [`npm module`](https://www.npmjs.com/package/react-native-ratings-fix) :confetti_ball:
 
 ## Feedback
 
