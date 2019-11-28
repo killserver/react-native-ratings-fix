@@ -160,6 +160,10 @@ export interface AirbnbRatingProps {
    */
   starStyle?: ImageStyle;
 
+  defaultColor?: string;
+
+  selectedColor?: string;
+
   /**
    * Callback method when the user finishes rating. Gives you the final rating value as a whole number
    */
