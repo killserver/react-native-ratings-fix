@@ -67,17 +67,57 @@ export default class TapRating extends Component {
         starContainerStyle.push(this.props.starContainerStyle);
     }
 
-    _.times(count, index => {
-      rating_array.push(
-        <Star
-          key={index}
-          position={index + 1}
-          starSelectedInPosition={this.starSelectedInPosition.bind(this)}
-          fill={position >= index + 1}
-          {...this.props}
-        />
-      )
-    })
+    const min = Math.floor(position)
+    const max = Math.round(count)
+    const currentRatingIndex = Math.max(min, max)
+    if(min==max) {
+      _.times(count, index => {
+        rating_array.push(
+          <Star
+            key={index}
+            position={index + 1}
+            starSelectedInPosition={this.starSelectedInPosition.bind(this)}
+            fill={position >= index + 1}
+            {...this.props}
+          />
+        )
+      })
+    } else {
+      _.times(currentRatingIndex, index => {
+        rating_array.push(
+          position >= index + 1 ? (<Star
+                      key={index}
+                      position={index + 1}
+                      starSelectedInPosition={this.starSelectedInPosition.bind(this)}
+                      fill={position >= index + 1}
+                      {...this.props}
+                    />) : (
+                    <View>
+            <View style={{ width:(this.props.size+6)*(1-(max*100 - position*100)/100), height:this.props.size, alignItems:'flex-start',justifyContent:'center', overflow: 'hidden' }}>
+              <Star
+                key={index}
+                position={index + 1}
+                starSelectedInPosition={this.starSelectedInPosition.bind(this)}
+                fill={true}
+                {...this.props}
+              />
+            </View>
+            <View 
+                style={{position:'absolute',top:0,left:0, height:this.props.size, width:this.props.size, alignItems:'flex-start',justifyContent:'center',zIndex:-1}}>
+              <Star
+                key={index}
+                position={index + 1}
+                starSelectedInPosition={this.starSelectedInPosition.bind(this)}
+                fill={false}
+                {...this.props}
+              />
+              </View>
+              </View>
+            )
+        )
+      })
+    }
+
 
     return (
       <View style={styles.ratingContainer}>
