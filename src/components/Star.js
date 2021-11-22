@@ -1,8 +1,8 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, Animated, TouchableOpacity} from 'react-native';
 
-const STAR_IMAGE = require( '../images/airbnb-star.png' );
-const STAR_SELECTED_IMAGE = require( '../images/airbnb-star-selected.png' );
+const STAR_IMAGE = require( '../images/airbnb-star-node' );
+const STAR_SELECTED_IMAGE = require( '../images/airbnb-star-selected-node' );
 const STAR_SIZE = 40;
 
 export default class Star extends PureComponent {
@@ -39,12 +39,12 @@ export default class Star extends PureComponent {
 
   render() {
     const { fill, size, selectedColor, isDisabled, starStyle, defaultColor } = this.props;
-    const starSource = fill && selectedColor === null ? STAR_SELECTED_IMAGE : STAR_IMAGE;
+    const starSource = fill && selectedColor === null ? STAR_SELECTED_IMAGE.uri2 : STAR_IMAGE.uri1;
 
     return (
       <TouchableOpacity activeOpacity={1} onPress={this.spring.bind( this )} disabled={isDisabled}>
         <Animated.Image
-          source={starSource}
+          source={{ uri: starSource }}
           style={[
             styles.starStyle,
             {

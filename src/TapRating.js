@@ -59,7 +59,7 @@ export default class TapRating extends Component {
 
   render() {
     const { position } = this.state
-    const { count, reviews, showRating, reviewColor, reviewSize } = this.props
+    const { count, reviews, showRating, reviewColor, reviewSize, lock = false } = this.props
     const rating_array = []
     const starContainerStyle = [styles.starContainer]
 
@@ -70,7 +70,7 @@ export default class TapRating extends Component {
     const min = Math.floor(position)
     const max = Math.round(count)
     const currentRatingIndex = Math.max(min, max)
-    if(min==max) {
+    if(!lock || min==max) {
       _.times(count, index => {
         rating_array.push(
           <Star

@@ -105,6 +105,7 @@ Also refer to the [`example`](https://github.com/killserver/react-native-ratings
 | isDisabled | false | boolean | Whether the rating can be modiefied by the user |
 | onFinishRating | none | function(value: number) | Callback method when the user finishes rating. Gives you the final rating value as a whole number |
 | starContainerStyle | none | object or stylesheet | Custom styles applied to the star container |
+| lock | false | boolean | Locked or not |
 
 ### RatingProps
 
